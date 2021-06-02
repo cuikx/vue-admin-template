@@ -1,8 +1,8 @@
 import request from '@/utils/request'
 
-export function getTableData(params) {
+export function getnemu(params) {
   return request({
-    url: 'getTableData',
+    url: 'http://localhost:8081/getnemu',
     method: 'get',
     params
   })
