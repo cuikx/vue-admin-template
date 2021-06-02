@@ -26,7 +26,7 @@ export default {
     // 网络请求直接写在文件中
     this.req({
       url: "http://localhost:8081/warehouse/queryWarehousesByPage",
-      data: {
+      params: {
         "pageNum":1,
         "pageSize":10,
         "warehouseName":"",
@@ -36,7 +36,7 @@ export default {
       method: "GET"
     }).then(
       res => {
-        this.tableData = res.data;
+        this.tableData = res.data.rows;
       },
       err => {
         console.log("err :", err);

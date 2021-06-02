@@ -90,11 +90,11 @@ export const constantRoutes = [{
     path: '/',
     component: Layout,
     children: [{
-      path: 'test',
-      name: 'test',
-      component: () => import('@/views/test/test'),
+      path: 'warehouse',
+      name: 'warehouse',
+      component: () => import('@/views/warehouse/warehouse'),
       meta: {
-        title: '测试',
+        title: '仓库测试',
       }
     }]
   },
